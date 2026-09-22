@@ -1,0 +1,40 @@
+body {
+  background-color: lightyellow;
+  font-family: courier;
+}
+h1{
+	color: darkred;
+}
+h2{
+	color: indianred;
+}
+ .wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.heading {
+    text-align: center;
+    font-size: 30px;
+}
+
+.entries {
+    margin-top: 50px;
+}
+
+.entry {
+    margin-bottom: 40px;
+    border-bottom: 1px solid black;
+}
+
+.entry a {
+    display: inline-block;
+    border: 2px solid black;
+    color: indianred;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 5px 30px;
+    font-family: courier;
+}
+
+
