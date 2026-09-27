@@ -1,0 +1,284 @@
+/* WHOLE PAGE */
+
+body {
+    margin: 0;
+    background-color: lightyellow;
+    color: darkred;
+    font-family: "Courier New", Courier, monospace;
+}
+
+
+/* INTRO */
+
+header {
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 75px;
+    line-height: 0.9;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+
+/* QUESTIONS */
+
+.question {
+    min-height: 80vh;
+    margin-left: 8%;
+    margin-right: 8%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.question > p {
+    width: 90px;
+    padding: 8px;
+    margin-bottom: 30px;
+
+    border: 2px solid indianred;
+
+    text-align: center;
+    font-weight: bold;
+}
+
+.question h2 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+
+/* ANSWERS */
+
+.choices {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.choices label {
+    padding: 15px 25px;
+
+    border: 2px solid indianred;
+
+    color: indianred;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.choices label:hover {
+    background-color: indianred;
+    color: lightyellow;
+}
+
+input[type="radio"]:checked + label {
+    background-color: darkred;
+    color: lightyellow;
+    border-color: darkred;
+}
+
+
+/* RESULT */
+
+.result {
+    min-height: 100vh;
+    margin-left: 8%;
+    margin-right: 8%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.result > p {
+    width: 200px;
+    padding: 8px;
+
+    border: 2px solid indianred;
+
+    text-align: center;
+    font-weight: bold;
+}
+
+.result h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+
+/* SANDWICH */
+
+.sandwich {
+    width: 70%;
+    min-height: 300px;
+
+    margin: 40px auto;
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sandwich p {
+    display: none;
+
+    width: 70%;
+    margin: 4px 0;
+
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+/* SHOW INGREDIENTS */
+
+body:has(#sunrise:checked) .egg {
+    display: block;
+}
+
+body:has(#afternoon:checked) .luncheon {
+    display: block;
+}
+
+body:has(#sunset:checked) .beef {
+    display: block;
+}
+
+body:has(#midnight:checked) .vegetable {
+    display: block;
+}
+
+
+body:has(#beach:checked) .honey {
+    display: block;
+}
+
+body:has(#city:checked) .chili {
+    display: block;
+}
+
+body:has(#forest:checked) .lime {
+    display: block;
+}
+
+body:has(#home:checked) .bbq {
+    display: block;
+}
+
+
+body:has(#calm:checked) .whitebread {
+    display: block;
+}
+
+body:has(#excited:checked) .toast {
+    display: block;
+}
+
+body:has(#lazy:checked) .wrap {
+    display: block;
+}
+
+body:has(#chaotic:checked) .croissant {
+    display: block;
+}
+
+
+body:has(#sunny:checked) .avocado {
+    display: block;
+}
+
+body:has(#rainy:checked) .cheese {
+    display: block;
+}
+
+body:has(#snowy:checked) .pickles {
+    display: block;
+}
+
+body:has(#windy:checked) .onion {
+    display: block;
+}
+
+
+/* SANDWICH STYLE */
+
+.sandwich p.bread {
+    padding: 35px 20px;
+
+    border: 3px solid darkred;
+    border-radius: 50px 50px 10px 10px;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sandwich p.extra {
+    padding: 12px 20px;
+
+    border: 2px solid indianred;
+
+    font-size: 15px;
+}
+
+.sandwich p.filling {
+    padding: 25px 20px;
+
+    background-color: darkred;
+    color: lightyellow;
+
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.sandwich p.sauce {
+    padding: 8px 20px;
+
+    border-top: 2px dashed indianred;
+    border-bottom: 2px dashed indianred;
+
+    font-size: 14px;
+}
+
+
+/* USER TESTING */
+
+.testing {
+    margin: 100px 8%;
+}
+
+.testing h2 {
+    font-size: 40px;
+}
+
+.test-results {
+    display: flex;
+    gap: 20px;
+}
+
+.test-results div {
+    width: 50%;
+    padding: 25px;
+
+    border: 2px solid indianred;
+}
