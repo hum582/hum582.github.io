@@ -227,8 +227,6 @@ body:has(#windy:checked) .onion {
     padding: 35px 20px;
 
     border: 3px solid darkred;
-    border-radius: 50px 50px 10px 10px;
-
     font-size: 20px;
     font-weight: bold;
 }
