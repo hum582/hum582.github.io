@@ -1,0 +1,68 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 50px;
+  background-color: #ff7272;
+  font-family: monospace;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 650px) {
+  body {
+    background-color: black;
+    color:  white;
+  }
+
+@media (max-height: 650px) {
+  body {
+    background-color: orange;
+  }
+}
+
+
+/* The body's font-size is smaller by default */
+body {
+  font-size: 16px;
+  background-color: black;
+  color: white;
+}
+
+h1,h2{
+ font-weight: normal;
+ text-align: center;
+}
+
+/* Tablet breakpoint */
+@media (min-width: 768px) {
+  body {
+    font-size: 40px;
+    background-color: black;
+  }
+}
+
+/* Desktop breakpoint */
+@media (min-width: 992px) {
+  body {
+    font-size: 50px;
+  }
+}
+
+/* Wide screen breakpoint */
+@media (min-width: 1200px) {
+  body {
+    font-size: 60px;
+  }
+}

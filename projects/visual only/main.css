@@ -1,0 +1,204 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+}
+
+/* WHOLE PAGE */
+
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* OBJECTS */
+
+.object {
+    position: absolute;
+    cursor: pointer;
+}
+
+.object img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* HOVER ANIMATION */
+
+.object:hover {
+    z-index: 10;
+}
+
+.object:hover img {
+    animation: spinType 0.8s ease-in-out forwards;
+}
+
+@keyframes spinType {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    60% {
+        transform: scale(1.2) rotate(240deg);
+    }
+
+    100% {
+        transform: scale(1.15) rotate(360deg);
+    }
+}
+
+
+/* FREQUENCY TEXT */
+
+.frequency {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin: 0;
+    padding-left: 10px;
+    white-space: nowrap;
+    font-family: Courier New, Courier,monospace;
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+}
+
+/* SHOW FREQUENCY ON HOVER */
+
+.object:hover .frequency {
+    display: block;
+}
+
+
+/* DESKTOP POSITIONS */
+
+.perfume {
+    width: 12%;
+    top: 12%;
+    left: 9%;
+}
+
+.airpods {
+    width: 7%;
+    top: 16%;
+    left: 34%;
+}
+
+.sunglasses {
+    width: 16%;
+    top: 18%;
+    left: 52%;
+}
+
+.eyedrops {
+    width: 5%;
+    top: 13%;
+    left: 80%;
+}
+
+.wallet {
+    width: 17%;
+    top: 43%;
+    left: 54%;
+}
+
+.pen {
+    width: 10%;
+    top: 59%;
+    left: 9%;
+}
+
+.lipbalm {
+    width: 6%;
+    top: 68%;
+    left: 29%;
+}
+
+.camera {
+    width: 20%;
+    top: 58%;
+    left: 38%;
+}
+
+.candle {
+    width: 12%;
+    top: 65%;
+    left: 80%;
+}
+
+
+/* MOBILE */
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .container {
+        min-height: 100svh;
+    }
+
+    .perfume {
+        width: 25%;
+        top: 9%;
+        left: 8%;
+    }
+
+    .airpods {
+        width: 17%;
+        top: 48%;
+        left: 45%;
+    }
+
+    .sunglasses {
+        width: 36%;
+        top: 87%;
+        left: 8%;
+    }
+
+    .eyedrops {
+        width: 12%;
+        top: 31%;
+        left: 73%;
+    }
+
+    .wallet {
+        width: 35%;
+        top: 8%;
+        left: 48%;
+    }
+
+    .pen {
+        width: 21%;
+        top: 32%;
+        left: 38%;
+    }
+
+    .lipbalm {
+        width: 14%;
+        top: 36%;
+        left: 12%;
+    }
+
+    .camera {
+        width: 39%;
+        top: 58%;
+        left: 10%;
+    }
+
+    .candle {
+        width: 26%;
+        top: 70%;
+        left: 66%;
+    }
+
+}
