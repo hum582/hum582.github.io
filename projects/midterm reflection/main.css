@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #30241f;
+  color: #eee2d2;
+  font-family: "Courier New", Courier, monospace;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 70px 24px;
+}
+
+.back-link {
+  color: inherit;
+  font-size: 14px;
+  text-underline-offset: 4px;
+}
+
+.back-link:hover {
+  color: #666;
+}
+
+h1 {
+  margin: 50px 0 24px;
+  font-size: clamp(28px, 5vw, 40px);
+  line-height: 1.2;
+}
+
+p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.8;
+}
