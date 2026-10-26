@@ -1,0 +1,206 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+/* Main page layout */
+
+.page {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    gap: 30px;
+    width: 100%;
+    align-items: start;
+}
+
+/* Sidebar */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.sidebar h1 {
+    font-size: 32px;
+    margin: 0;
+    letter-spacing: -3px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.menu a {
+    display: block;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 19px;
+    line-height: 1.2;
+    color: black;
+    text-decoration: none;
+}
+
+.menu a:first-child {
+    margin-left: 4px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.info a {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: black;
+    text-decoration: none;
+}
+
+.source {
+    font-size: 11px;
+    color: gray;
+}
+
+/* Main font grid */
+
+.font-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    width: 100%;
+    min-width: 0;
+    align-items: start;
+}
+
+/* Independent columns */
+
+.font-column {
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    min-width: 0;
+}
+
+/* Font cards */
+
+.font-card {
+    width: 100%;
+    min-width: 0;
+}
+
+.specimen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.specimen p {
+    margin: 0;
+    max-width: 100%;
+    overflow-wrap: normal;
+}
+
+.font-label {
+    border-top: 2px solid black;
+    padding-top: 10px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/* Font 1 - Large typography */
+
+.font-one {
+    font-size: 45px;
+}
+
+@media (max-width: 900px) {
+    .font-one {
+        font-size: 25px;
+    }
+}
+
+/* Font 2 - Short and bold */
+
+.font-two {
+    min-height: 110px;
+    font-size: clamp(24px, 3vw, 46px);
+    font-weight: 900;
+    letter-spacing: -3px;
+}
+
+/* Font 3 - Large ampersand */
+
+.font-three {
+    min-height: 420px;
+    font-size: clamp(110px, 17vw, 260px);
+    font-weight: 900;
+    line-height: 1;
+}
+
+/* Font 4 - Wide letter spacing */
+
+.font-four {
+    min-height: 110px;
+    font-size: clamp(16px, 2vw, 27px);
+    letter-spacing: 4px;
+    line-height: 1.8;
+}
+
+/* Font 5 - Serif typography */
+
+.font-five {
+    min-height: 340px;
+    font-family: Georgia, serif;
+    font-size: clamp(22px, 2.5vw, 37px);
+    line-height: 1.1;
+}
+
+/* Font 6 - Bold playful type */
+
+.font-six {
+    min-height: 110px;
+    font-size: clamp(30px, 4vw, 65px);
+    font-weight: 900;
+    letter-spacing: -4px;
+}
+.font-seven {
+    min-height: 180px;
+    font-family: Georgia, serif;
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: -3px;
+}
+
+/* Different vertical spacing */
+
+.column-one {
+    gap: 65px;
+}
+
+.column-two {
+    gap: 85px;
+}
+
+.column-three {
+    gap: 75px;
+}
+
