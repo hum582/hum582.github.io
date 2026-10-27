@@ -204,3 +204,32 @@ body {
     gap: 75px;
 }
 
+@keyframes ampersandSpin {
+    0% {
+        transform: rotate(0turn);
+    }
+
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.font-three p {
+    animation: ampersandSpin 8s linear infinite;
+}
+
+/* MEKSIKO Animation */
+
+@keyframes meksikoMove {
+    0% {
+        transform: rotate(-3deg);
+    }
+
+    100% {
+        transform: rotate(3deg);
+    }
+}
+
+.font-two p {
+    animation: meksikoMove 2s ease-in-out infinite alternate;
+}
