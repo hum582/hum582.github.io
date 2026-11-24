@@ -60,6 +60,7 @@ header {
 .intro {
     text-align: center;
     padding: 10px 20px 30px;
+    margin-top: -60px;
 }
 
 .subtitle {
