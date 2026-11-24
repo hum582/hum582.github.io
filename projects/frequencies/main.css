@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f0ebdf;
+    color: #443a32;
+    font-family: Georgia, serif;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 5%;
+}
+
+.home {
+    font-family: monospace;
+    font-size: 14px;
+    color: #443a32;
+    text-decoration: none;
+}
+
+.home:hover {
+    text-decoration: underline;
+}
+
+/* Personal Pin */
+
+.pin {
+    width: 90px;
+    height: 90px;
+    background-color: lightyellow;
+    color: #443a32;
+    border: 4px double #f0ebdf;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(12deg);
+}
+
+.pin span:first-child {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.pin span:last-child {
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+/* Title and Introduction */
+
+.intro {
+    text-align: center;
+    padding: 10px 20px 30px;
+}
+
+.subtitle {
+    font-family: monospace;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #85786b;
+}
+
+h1 {
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 76px;
+    font-weight: 500;
+    line-height: 1.05;
+    margin: 25px 0;
+}
+
+h1 em {
+    color: #35452e;
+}
+
+.description {
+    max-width: 580px;
+    margin: 25px auto;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #776c5f;
+}
+
+/* Photo Collage */
+
+.collage {
+    max-width: 1000px;
+    margin: 30px auto 70px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+/* Polaroid Cards */
+
+.polaroid {
+    width: 270px;
+    padding: 12px 12px 18px;
+    background-color: #fffdf7;
+    box-shadow: 3px 5px 12px #443a3226;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.polaroid img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+.polaroid h2 {
+    font-size: 20px;
+    font-weight: normal;
+    font-style: italic;
+    margin: 15px 0 7px;
+}
+
+.polaroid p {
+    font-family: monospace;
+    font-size: 11px;
+    margin: 5px 0;
+    color: #776c5f;
+}
+
+.year {
+    letter-spacing: 2px;
+}
+
+/* Different Rotation Angles */
+
+.photo1 {
+    transform: rotate(-8deg);
+}
+
+.photo2 {
+    transform: rotate(4deg);
+}
+
+.photo3 {
+    transform: rotate(8deg);
+}
+
+.photo4 {
+    transform: rotate(-5deg);
+}
+
+.photo5 {
+    transform: rotate(5deg);
+}
+
+/* Masking Tape */
+
+.tape {
+    position: absolute;
+    width: 85px;
+    height: 25px;
+    background-color: rgba(190, 168, 119, 0.55);
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-5deg);
+}
+
+.photo2 .tape {
+    background-color: rgba(157, 182, 200, 0.65);
+}
+
+.photo4 .tape {
+    background-color: rgba(155, 169, 138, 0.65);
+}
+
+/* Hover Effect */
+
+.polaroid:hover {
+    transform: rotate(0deg) scale(1.08);
+    z-index: 10;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 20px 20px 40px;
+}
+
+footer p {
+    font-size: 19px;
+    font-style: italic;
+    color: #776c5f;
+}
+
+footer span {
+    font-family: monospace;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+/* Mobile Version */
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 43px;
+    }
+
+    .subtitle {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .collage {
+        gap: 40px;
+        padding: 20px 35px;
+    }
+
+    .polaroid {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .pin {
+        width: 70px;
+        height: 70px;
+    }
+
+    .pin span:first-child {
+        font-size: 16px;
+    }
+
+    .pin span:last-child {
+        font-size: 8px;
+    }
+}
